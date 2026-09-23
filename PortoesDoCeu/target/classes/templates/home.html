@@ -1,42 +1,82 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
     <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
-<body>
-<header th:replace="~{fragments/header}"></header>
-<div class="container-info">
-    <div class="info-box">
-        <h2>Pacientes</h2>
-        <!--<p th:text="${pacientes.size()}"></p>-->
-        <p>34</p>
-    </div>
-    <div class="info-box">
-        <h2>Profissionais</h2>
-        <!--<p th:text="${profissionais.size()}"></p>-->
-        <p>12</p>
-    </div>
-    <div class="info-box">
-        <h2>Consultas Agendadas</h2>
-        <!--<p th:text="${consultas.size()}"></p>-->
-        <p>20</p>
-    </div>
-    <div class="info-box">
-        <h2>Internações</h2>
-        <!--<p th:text="${internacoes.size()}"></p>-->
-        <p>5</p>
-    </div>
-    <div class="info-box">
-        <h2>Quartos Disponíveis</h2>
-        <!--<p th:text="${quartosDisponiveis.size()}"></p>-->
-        <p>15</p>
-    </div>
-    <div class="info-box">
 
+<body>
+    <div class="layout-wrapper">
+        <nav th:replace="~{fragments/nav}"></nav>
+
+        <div class="main">
+            <header th:replace="~{fragments/header}"></header>
+
+            <div class="container-info">
+                <div class="info-box">
+                    <h2>Pacientes</h2>
+                    <!--<p th:text="${pacientes.size()}"></p>-->
+                    <p>34</p>
+                </div>
+                <div class="info-box">
+                    <h2>Profissionais</h2>
+                    <!--<p th:text="${profissionais.size()}"></p>-->
+                    <p>12</p>
+                </div>
+                <div class="info-box">
+                    <h2>Consultas Agendadas</h2>
+                    <!--<p th:text="${consultas.size()}"></p>-->
+                    <p>20</p>
+                </div>
+                <div class="info-box">
+                    <h2>Internações</h2>
+                    <!--<p th:text="${internacoes.size()}"></p>-->
+                    <p>5</p>
+                </div>
+                <div class="info-box">
+                    <h2>Quartos Disponíveis</h2>
+                    <!--<p th:text="${quartosDisponiveis.size()}"></p>-->
+                    <p>15</p>
+                </div>
+                <div class="info-box">
+                    <h2></h2>
+                </div>
+            </div>
+
+            <div class="container-consultas">
+                <h2>Próximas Consultas</h2>
+                <table class="consulta-table">
+                    <!-- Feito em table para quando houver dados reais percorer com th:each -->
+                    <thead class="consulta-header">
+                        <th>Horário</th>
+                        <th>Paciente</th>
+                        <th>Profissional</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00</td>
+                            <td>João Silva</td>
+                            <td>Dr. Carlos</td>
+                        </tr>
+                        <tr>
+                            <td>09:30</td>
+                            <td>Maria Souza</td>
+                            <td>Dra. Ana</td>
+                        </tr>
+                        <tr>
+                            <td>11:00</td>
+                            <td>Pedro Santos</td>
+                            <td>Dr. Ricardo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-</div>
 </body>
+<script th:src="@{/js/header.js}"></script>
+
 </html>

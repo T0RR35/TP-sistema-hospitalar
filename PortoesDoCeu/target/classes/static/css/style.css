@@ -4,6 +4,49 @@
     box-sizing: border-box;
 }
 
+.layout-wrapper {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 0;
+    background-color: #005409;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sidebar.open {
+    width: 250px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+}
+
+.sidebar ul li a:hover {
+    background-color: black;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    transition: all 0.3s ease;
+}
+
 .header {
     background-color: #005409;
     color: white;
@@ -12,6 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .nav-btn {
@@ -37,4 +81,46 @@
     border-radius: 8px;
     text-align: center;
     margin: 40px;
+}
+
+.container-consultas {
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.consulta-table {
+    width: 95%;
+    margin: 40px;
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    border-radius: 8px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.consulta-table th,
+.consulta-table td {
+    padding: 12px;
+    text-align: center;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.consulta-header {
+    text-align: center;
+    background-color: #005409;
+    color: white;
+    font-size: 24px;
+}
+
+.consulta-table th:last-child,
+.consulta-table td:last-child {
+    border-right: none;
+}
+
+.consulta-table tr:last-child td {
+    border-bottom: none;
 }
