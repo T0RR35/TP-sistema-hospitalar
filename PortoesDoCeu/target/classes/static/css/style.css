@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #005409;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn {
+    cursor: pointer;
+    background-color: #005409;
+    border: none;
+    color: white;
+    position: fixed;
+    left: 20px;
+    font-size: 32px;
+}
+
+.container-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+}
+
+.info-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    margin: 40px;
+}
