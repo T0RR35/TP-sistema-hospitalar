@@ -1,0 +1,42 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pacientes</title>
+    <link rel="stylesheet" th:href="@{/css/pacientes.css}">
+</head>
+
+<body>
+    <div class="layout-wrapper">
+        <nav th:replace="~{fragments/nav}"></nav>
+
+        <div class="main">
+            <header th:replace="~{fragments/header}"></header>
+
+            <section id="pacientes-container">
+                <div id="listagem-pacientes">
+                    <table>
+                        <tr>
+                            <th>CPF</th>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Acoes</th>
+                        </tr>
+                        <tr>
+                            <td>123.456.789.10</td>
+                            <td>Bruno</td>
+                            <td>3191234-5678</td>
+                            <td>ver  editar</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</body>
+<script th:src="@{/js/header.js}"></script>
+
+</html>

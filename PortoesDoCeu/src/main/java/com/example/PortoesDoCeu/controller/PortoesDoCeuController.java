@@ -10,4 +10,9 @@ public class PortoesDoCeuController {
     public String home() {
         return "home";
     }
+
+    @GetMapping ("/pacientes")
+    public String pacientes(){
+        return "pacientes";
+    }
 }
