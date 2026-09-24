@@ -12,6 +12,4 @@ public class Internacao extends Atendimento{
     private Quarto quarto;
     private LocalDate alta_prevista; 
     private LocalDateTime data_alta;
-
-
 }

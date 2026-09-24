@@ -1,0 +1,53 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agenda</title>
+    <link rel="icon" type="image/png" th:href="@{/images/logo-sem-texto.png}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/agenda.css}">
+</head>
+
+<body>
+
+    <div class="layout-wrapper">
+        <nav th:replace="~{fragments/nav}"></nav>
+
+        <div class="main">
+            <header th:replace="~{fragments/header}"></header>
+            <table class="agenda">
+
+                <thead>
+                    <tr>
+                        <th>Domingo</th>
+                        <th>Segunda</th>
+                        <th>Terça</th>
+                        <th>Quarta</th>
+                        <th>Quinta</th>
+                        <th>Sexta</th>
+                        <th>Sábado</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="tr-semana">
+                        <td>08:00 - John</td>
+                        <td>09:00 - Maria</td>
+                        <td>10:00 - Carlos</td>
+                        <td>08:30 - Ana</td>
+                        <td>11:00 - João</td>
+                        <td>09:30 - Pedro</td>
+                        <td>10:00 - Lucas</td>
+                    </tr>
+                </tbody>
+                <caption>Agenda da Semana</caption>
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script th:src="@{/js/header.js}"></script>

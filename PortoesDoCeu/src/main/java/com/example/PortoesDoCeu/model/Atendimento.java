@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-public class Atendimento {
+abstract class Atendimento {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;

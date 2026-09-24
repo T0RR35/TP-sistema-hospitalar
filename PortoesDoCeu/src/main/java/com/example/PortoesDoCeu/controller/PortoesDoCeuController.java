@@ -20,4 +20,9 @@ public class PortoesDoCeuController {
     public String login() {
         return "login";
     }
+
+    @GetMapping("/agenda")
+    public String agenda() {
+        return "agenda";
+    }
 }

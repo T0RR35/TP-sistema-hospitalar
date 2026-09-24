@@ -1,0 +1,26 @@
+.agenda {
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.agenda caption {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 0;
+}
+
+.agenda th {
+    background: #f5f5f5;
+    font-weight: 600;
+    padding: 14px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.agenda td {
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
