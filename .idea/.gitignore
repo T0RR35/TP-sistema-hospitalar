@@ -10,3 +10,4 @@
 /dataSources.local.xml
 *.iml
 *.xml
+.gitignore
