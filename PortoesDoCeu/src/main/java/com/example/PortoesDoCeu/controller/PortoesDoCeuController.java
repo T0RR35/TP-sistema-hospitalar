@@ -11,8 +11,13 @@ public class PortoesDoCeuController {
         return "home";
     }
 
-    @GetMapping ("/pacientes")
+    @GetMapping("/pacientes")
     public String pacientes(){
         return "pacientes";
+    }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login";
     }
 }
