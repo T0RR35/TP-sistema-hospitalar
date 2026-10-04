@@ -1,0 +1,50 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profissionais</title>
+    <link rel="icon" type="image/png" th:href="@{/images/logo-sem-texto.png}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/profissionais.css}">
+</head>
+
+<body>
+<div class="layout-wrapper">
+    <nav th:replace="~{fragments/nav}"></nav>
+
+    <div class="main">
+        <header th:replace="~{fragments/header}"></header>
+        <h1>Profissionais</h1>
+        <a th:href="@{cadastro-profissional}">Novo Profissional</a>
+
+        <form action="">
+            <input type="text" placeholder="Digite o nome aqui">
+            <button type="submit">Buscar</button>
+        </form>
+        <br>
+
+        <section id="profissionais-container">
+            <div id="listagem-profissionais">
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Registro</th>
+                        <th>Especialidade</th>
+                        <th>Ações</th>
+                    </tr>
+                    <tr>
+                        <td>Dr. João</td>
+                        <td>CRM 12345</td>
+                        <td>Cardiologia</td>
+                        <td>Ver | Editar</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+<script th:src="@{/js/header.js}"></script>
+</html>

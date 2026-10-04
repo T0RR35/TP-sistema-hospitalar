@@ -16,6 +16,9 @@ public class PortoesDoCeuController {
         return "pacientes";
     }
 
+    @GetMapping("/profissionais")
+    public String profissionais(){ return "profissionais";}
+
     @GetMapping("/login")
     public String login() {
         return "login";
@@ -29,5 +32,10 @@ public class PortoesDoCeuController {
     @GetMapping("/cadastro-paciente")
     public String cadastroPaciente() {
         return "cadastro-paciente";
+    }
+
+    @GetMapping("/cadastro-profissional")
+    public String cadastroProfissional() {
+        return "cadastro-profissional";
     }
 }
