@@ -82,11 +82,11 @@
     </div>
 
     <!-- Modal de Cadastro de Consulta -->
-    <div id="modal-cadastro-profissional" class="modal-backdrop">
+    <div id="modal-cadastro-consulta" class="modal-backdrop">
         <div class="modal">
             <div class="modal-header">
                 <h2>Cadastro de Consulta</h2>
-                <button type="button" id="btn-fechar-modal-profissional" class="btn-fechar-modal">&times;</button>
+                <button type="button" id="btn-fechar-modal-consulta" class="btn-fechar-modal">&times;</button>
             </div>
             <form th:action="@{/}" method="get" class="form-cadastro-modal">
                 <input type="text" id="nomeProfissional" name="nomeProfissional" placeholder="nome Profissional" required>
@@ -95,7 +95,7 @@
                 <input type="datetime-local" id="horario" name="horario" placeholder="" required>
                 <input type="text" id="motivo" name="motivo" placeholder="motivo" required>
                 <div class="modal-botoes">
-                    <button type="button" id="btn-cancelar-modal-profissional" class="btn-cancelar">Cancelar</button>
+                    <button type="button" id="btn-cancelar-modal-consulta" class="btn-cancelar">Cancelar</button>
                     <button type="submit" class="btn-cadastrar">Cadastrar</button>
                 </div>
             </form>
