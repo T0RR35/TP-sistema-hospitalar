@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
         // Função para fechar o modal
-    function fecharModal() {
+    function fecharModalC() {
         if (modalBackdropC) {
             modalBackdropC.classList.remove('aberto');
         }
@@ -28,19 +28,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Fecha o modal ao clicar no botão "X"
     if (btnFecharModalC) {
-        btnFecharModalC.addEventListener('click', fecharModal);
+        btnFecharModalC.addEventListener('click', fecharModalC);
     }
 
     // Fecha o modal ao clicar no botão "Cancelar"
     if (btnCancelarModalC) {
-        btnCancelarModalC.addEventListener('click', fecharModal);
+        btnCancelarModalC.addEventListener('click', fecharModalC);
     }
 
     // Fecha o modal ao clicar fora do conteúdo (no backdrop)
     if (modalBackdropC) {
         modalBackdropC.addEventListener('click', function (event) {
             if (event.target === modalBackdropC) {
-                fecharModal();
+                fecharModalC();
             }
         });
     }
@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('keydown', function (event) {
         if (event.key === 'Escape') {
             fecharModal();
+            fecharModalC();
         }
     });
 });
