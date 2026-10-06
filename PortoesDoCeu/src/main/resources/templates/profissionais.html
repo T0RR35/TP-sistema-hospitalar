@@ -23,7 +23,10 @@
                     <input type="text" id="filtro-registro" name="filtro-registro" placeholder="Buscar por registro">
                     <button type="button" class="btn-filtrar">Filtrar</button>
                 </div>
-                <button type="button" id="btn-novo-profissional" class="btn-novo-profissional">Novo Profissional</button>
+                <div id="botoes">
+                    <button type="button" id="btn-novo-profissional" class="btn-novo-profissional">Novo Profissional</button>
+                    <button type="button" id="btn-nova-consulta" class="btn-novo-profissional">Nova Consulta</button>
+                </div>
             </div>
 
             <section id="profissionais-container">
@@ -70,6 +73,27 @@
                 <input type="text" id="especialidade" name="especialidade" placeholder="Especialidade" required>
                 <input type="text" id="telefone" name="telefone" placeholder="Telefone" required>
                 <input type="email" id="email" name="email" placeholder="Email" required>
+                <div class="modal-botoes">
+                    <button type="button" id="btn-cancelar-modal-profissional" class="btn-cancelar">Cancelar</button>
+                    <button type="submit" class="btn-cadastrar">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Cadastro de Consulta -->
+    <div id="modal-cadastro-profissional" class="modal-backdrop">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Cadastro de Consulta</h2>
+                <button type="button" id="btn-fechar-modal-profissional" class="btn-fechar-modal">&times;</button>
+            </div>
+            <form th:action="@{/}" method="get" class="form-cadastro-modal">
+                <input type="text" id="nomeProfissional" name="nomeProfissional" placeholder="nome Profissional" required>
+                <input type="text" id="nomePaciente" name="nomePaciente" placeholder="nome Paciente" required>
+                <input type="text" id="obs" name="obs" placeholder="observacoes" required>
+                <input type="datetime-local" id="horario" name="horario" placeholder="" required>
+                <input type="text" id="motivo" name="motivo" placeholder="motivo" required>
                 <div class="modal-botoes">
                     <button type="button" id="btn-cancelar-modal-profissional" class="btn-cancelar">Cancelar</button>
                     <button type="submit" class="btn-cadastrar">Cadastrar</button>
