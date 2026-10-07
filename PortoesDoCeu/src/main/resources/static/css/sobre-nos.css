@@ -70,38 +70,6 @@ a {
     font-size: 10px;
 }
 
-.landing-nav {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
-
-.landing-nav a {
-    color: #555;
-    font-size: 13px;
-    transition: 0.2s;
-}
-
-.landing-nav a:hover {
-    color: #005409;
-}
-
-.landing-nav .btn-login {
-    padding: 11px 18px;
-
-    background: #005409;
-    color: white;
-
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.landing-nav .btn-login:hover {
-    background: #003f06;
-    color: white;
-}
-
-
 /* =========================
    TEXTOS GERAIS
 ========================= */
