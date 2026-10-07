@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class PortoesDoCeuController {
 
     @GetMapping("/")
-    public String home() {
-        return "home";
+    public String landing() {
+        return "landing";
     }
 
     @GetMapping("/pacientes")
@@ -17,7 +17,9 @@ public class PortoesDoCeuController {
     }
 
     @GetMapping("/profissionais")
-    public String profissionais(){ return "profissionais";}
+    public String profissionais(){
+        return "profissionais";
+    }
 
     @GetMapping("/login")
     public String login() {
