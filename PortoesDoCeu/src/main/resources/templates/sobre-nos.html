@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sobre Nós | Portões do Céu</title>
+
+    <link rel="icon" type="image/png" th:href="@{/images/logo-sem-texto.png}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/sobre-nos.css}">
+</head>
+
+<body>
+    <div class="layout-wrapper">
+        <nav th:replace="~{fragments/nav}"></nav>
+
+        <div class="main">
+            <header th:replace="~{fragments/header}"></header>
+
+
+                <section class="about-hero" id="sobre">
+
+                    <div class="about-hero-content">
+
+                        <span class="section-label">SOBRE NÓS</span>
+
+                        <h1>
+                            Tecnologia para uma
+                            <strong>gestão hospitalar mais organizada.</strong>
+                        </h1>
+
+                        <p>
+                            O Portões do Céu é um sistema desenvolvido para auxiliar
+                            na organização e gerenciamento de informações hospitalares.
+                        </p>
+
+                        <p>
+                            A plataforma centraliza dados de pacientes, profissionais,
+                            consultas e outros recursos em um único ambiente.
+                        </p>
+
+                    </div>
+
+                    <div class="about-hero-logo">
+                        <div class="logo-circle">
+                            <img th:src="@{/images/logo-sem-texto.png}" alt="Portões do Céu">
+                        </div>
+                        <span>SISTEMA HOSPITALAR</span>
+                    </div>
+
+                </section>
+
+
+                <section class="about-section">
+
+                    <div class="section-title">
+                        <span class="section-label">NOSSA PROPOSTA</span>
+
+                        <h2>
+                            Organização para uma
+                            <strong>gestão mais eficiente.</strong>
+                        </h2>
+                    </div>
+
+                    <div class="text-columns">
+
+                        <div>
+                            <p>
+                                Em um ambiente hospitalar existe uma grande quantidade
+                                de informações que precisa ser organizada diariamente.
+                            </p>
+
+                            <p>
+                                O sistema foi criado para centralizar essas informações
+                                e facilitar o acesso aos dados.
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                A plataforma reúne diferentes áreas em uma mesma
+                                interface, evitando a necessidade de buscar informações
+                                em diferentes locais.
+                            </p>
+
+                            <p>
+                                Dessa forma, o Portões do Céu busca proporcionar uma
+                                experiência simples, organizada e objetiva.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="objectives-section" id="objetivos">
+
+                    <div class="section-title centered">
+                        <span class="section-label">OBJETIVOS</span>
+
+                        <h2>O que queremos proporcionar</h2>
+
+                        <p>
+                            O sistema foi pensado para melhorar a organização e o
+                            gerenciamento das informações hospitalares.
+                        </p>
+                    </div>
+
+                    <div class="objectives-grid">
+
+                        <article class="info-card">
+                            <span class="card-number">01</span>
+                            <h3>Centralização</h3>
+                            <p>Reunir informações importantes em uma única plataforma.</p>
+                        </article>
+
+                        <article class="info-card">
+                            <span class="card-number">02</span>
+                            <h3>Organização</h3>
+                            <p>Estruturar os dados de forma clara e acessível.</p>
+                        </article>
+
+                        <article class="info-card">
+                            <span class="card-number">03</span>
+                            <h3>Praticidade</h3>
+                            <p>Facilitar a consulta e o gerenciamento das informações.</p>
+                        </article>
+
+                        <article class="info-card">
+                            <span class="card-number">04</span>
+                            <h3>Usabilidade</h3>
+                            <p>Oferecer uma interface simples e intuitiva.</p>
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <section class="mvv-section" id="valores">
+
+                    <div class="section-title centered">
+                        <span class="section-label">PRINCÍPIOS</span>
+                        <h2>Missão, visão e valores</h2>
+                    </div>
+
+                    <div class="mvv-grid">
+
+                        <article class="mvv-card">
+                            <div class="mvv-icon">M</div>
+                            <h3>Missão</h3>
+                            <p>
+                                Auxiliar na organização das informações hospitalares
+                                através de uma solução digital simples e centralizada.
+                            </p>
+                        </article>
+
+                        <article class="mvv-card">
+                            <div class="mvv-icon">V</div>
+                            <h3>Visão</h3>
+                            <p>
+                                Contribuir para uma gestão hospitalar mais organizada
+                                através da tecnologia.
+                            </p>
+                        </article>
+
+                        <article class="mvv-card">
+                            <div class="mvv-icon">V</div>
+                            <h3>Valores</h3>
+                            <p>
+                                Organização, responsabilidade, simplicidade,
+                                acessibilidade e eficiência.
+                            </p>
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <section class="features-section" id="funcionalidades">
+
+                    <div class="section-title centered">
+                        <span class="section-label">O SISTEMA</span>
+                        <h2>Principais funcionalidades</h2>
+                    </div>
+
+                    <div class="features-grid">
+
+                        <article class="feature">
+                            <span class="feature-number">01</span>
+                            <div>
+                                <h3>Pacientes</h3>
+                                <p>Cadastro e organização das informações dos pacientes.</p>
+                            </div>
+                        </article>
+
+                        <article class="feature">
+                            <span class="feature-number">02</span>
+                            <div>
+                                <h3>Profissionais</h3>
+                                <p>Organização dos dados dos profissionais.</p>
+                            </div>
+                        </article>
+
+                        <article class="feature">
+                            <span class="feature-number">03</span>
+                            <div>
+                                <h3>Agenda</h3>
+                                <p>Organização dos atendimentos e compromissos.</p>
+                            </div>
+                        </article>
+
+                        <article class="feature">
+                            <span class="feature-number">04</span>
+                            <div>
+                                <h3>Consultas</h3>
+                                <p>Gerenciamento das consultas realizadas.</p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <section class="project-section">
+
+                    <div>
+                        <span class="section-label">SOBRE O PROJETO</span>
+
+                        <h2>
+                            Tecnologia aplicada à organização hospitalar.
+                        </h2>
+                    </div>
+
+                    <div>
+                        <p>
+                            O Portões do Céu reúne diferentes funcionalidades em
+                            uma única aplicação voltada ao gerenciamento hospitalar.
+                        </p>
+
+                        <p>
+                            O projeto aplica conceitos de desenvolvimento web,
+                            organização de dados e experiência do usuário para
+                            criar uma plataforma clara e funcional.
+                        </p>
+
+                        <p>
+                            Sua estrutura também permite que novas funcionalidades
+                            sejam adicionadas conforme o projeto evolui.
+                        </p>
+                    </div>
+
+                </section>
+
+
+                <section class="final-section">
+
+                    <div class="final-content">
+
+                        <span class="section-label">PORTÕES DO CÉU</span>
+
+                        <h2>
+                            Organização que ajuda
+                            a cuidar melhor.
+                        </h2>
+
+                        <p>
+                            Um sistema pensado para transformar informações
+                            organizadas em uma experiência de gerenciamento mais simples.
+                        </p>
+
+                        <a th:href="@{/}" class="back-button">
+                            Voltar para o início
+                        </a>
+
+                    </div>
+
+                </section>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
